@@ -1,0 +1,86 @@
+{
+  "id": "mom",
+  "name": "Minutes of Meeting",
+  "description": "Fills the YMSLI MOM layout (header + meeting summary + action plan).",
+  "format": "xlsx",
+  "template_file": "MOM Sample.xlsx",
+  "uses_jinja": false,
+  "filler": "mom_sample",
+  "slots": [
+    {
+      "id": "purpose",
+      "label": "Purpose / meeting title",
+      "type": "string",
+      "required": true,
+      "ask_priority": 100,
+      "question": "What is the meeting purpose / title?",
+      "anchors": ["Sheet1!E5"]
+    },
+    {
+      "id": "meeting_date",
+      "label": "Meeting date",
+      "type": "date",
+      "required": true,
+      "ask_priority": 95,
+      "question": "Meeting date? (YYYY-MM-DD or 'today')",
+      "default": "today",
+      "anchors": ["Sheet1!B5"]
+    },
+    {
+      "id": "prepared_by",
+      "label": "Prepared by",
+      "type": "string",
+      "required": true,
+      "ask_priority": 90,
+      "question": "Prepared by? (e.g. YMSLI / your name)",
+      "default": "YMSLI",
+      "anchors": ["Sheet1!B6"]
+    },
+    {
+      "id": "venue",
+      "label": "Venue",
+      "type": "string",
+      "required": true,
+      "ask_priority": 85,
+      "question": "Venue / location?",
+      "anchors": ["Sheet1!E6"]
+    },
+    {
+      "id": "attendees_ymsli",
+      "label": "Attendees (YMSLI)",
+      "type": "list",
+      "required": true,
+      "ask_priority": 80,
+      "question": "YMSLI / delivery-side attendees (comma-separated)?",
+      "anchors": ["Sheet1!B7"]
+    },
+    {
+      "id": "attendees_ymesg",
+      "label": "Attendees (client)",
+      "type": "list",
+      "required": false,
+      "ask_priority": 50,
+      "question": "Client-side attendees (optional, comma-separated)?",
+      "anchors": ["Sheet1!E7"]
+    },
+    {
+      "id": "summary_items",
+      "label": "Meeting summary items",
+      "type": "list",
+      "required": true,
+      "ask_priority": 75,
+      "question": "Meeting summary / agenda points (one per line, or Topic: detail).",
+      "anchors": []
+    },
+    {
+      "id": "action_items",
+      "label": "Action plan",
+      "type": "list",
+      "required": true,
+      "ask_priority": 70,
+      "question": "Action plan rows as: Action | Responsibility | Target date | Status | Remarks",
+      "help": "Example: Share architecture deck | Abhilasha Tyagi San | 2026-08-14 | Open |",
+      "anchors": []
+    }
+  ]
+}
