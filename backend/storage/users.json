@@ -1,0 +1,30 @@
+[
+  {
+    "id": "4075fa1d6f444afa",
+    "email": "admin@ymsli.com",
+    "name": "System Admin",
+    "role": "admin",
+    "password_hash": "pbkdf2_sha256$f32a03d6b7dab684eb303619633719bd$b837149fc4d10e58351acf63c4eb5854eba2aba408c27a38a5261a25179fe599"
+  },
+  {
+    "id": "dd8c0009fcbcc3a6",
+    "email": "employee@ymsli.com",
+    "name": "YMSLI Employee",
+    "role": "employee",
+    "password_hash": "pbkdf2_sha256$b3db0d6db0bc80acae81b9be97f731cd$b8f0c1b7a016665269bf073a5752b162d2e19729d9597879a554c25aad04a116"
+  },
+  {
+    "id": "a88a7f69331c113e",
+    "email": "consultant@ymsli.com",
+    "name": "Aaditva Admin",
+    "role": "admin",
+    "password_hash": "pbkdf2_sha256$76db38610ac285e35a0a8689505b96c3$c8e9f25835ce25e919bcd56dc03950d3864aba4f37924cff980bcfbadf61e773"
+  },
+  {
+    "id": "cea380dbb4b7f90f",
+    "email": "joiner@ymsli.com",
+    "name": "New Employee",
+    "role": "employee",
+    "password_hash": "pbkdf2_sha256$afda7cb4dd4a4c8391a25e135b72a609$a9e14cba7883c21a26e213f853b004e9f125c5b5591c804488c58262e3123ce6"
+  }
+]
