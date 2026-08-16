@@ -63,7 +63,7 @@ In live mode, access is taken from real Graph `/permissions` on each drive item.
 
 - `GET /api/onedrive/auth-config`
 - `GET /api/onedrive/me`
-- `GET /api/onedrive/files?folder=Templates`
+- `GET /api/onedrive/files?folder=Template`
 - `POST /api/onedrive/search`
 - `GET /api/onedrive/files/{id}/access`
 - `GET /api/onedrive/files/{id}/versions`
